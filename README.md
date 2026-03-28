@@ -13,7 +13,7 @@ This repository includes topology diagrams, device configurations, and validatio
 ---
 
 ## Topology
-![Lab Topology](./Topology/Classic_Hierarchical_Arch.png)
+![Lab Topology](./Topology/SD-WAN_Design_Case.png)
 The Visio network diagram shown above illustrates the overall architecture of this lab environment.
 
 ---
