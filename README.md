@@ -1,6 +1,6 @@
 # EnterpriseNet-Cisco_SD-WAN_Global_Deployment_Project
 
-## Overview
+## 1.Overview
 
 This repository presents a research-oriented implementation of a Software-Defined WAN (SD-WAN) architecture designed to emulate a modern, resilient enterprise network spanning multiple geographic regions.
 
@@ -12,7 +12,7 @@ This repository includes topology diagrams, device configurations, and validatio
 
 ---
 
-## Topology
+## 2.Topology
 
 ![Lab Topology](./Topology/SD-WAN_Design_Case.png)
 
@@ -20,7 +20,7 @@ The Visio network diagram shown above illustrates the overall architecture of th
 
 ---
 
-## Research Scope
+## 3.Research Scope
 This project is not a production deployment, but a research and simulation study focusing on the following key design objectives:
 
 Scalable topology design based on a dual data center model
@@ -35,10 +35,10 @@ Enterprise service sharing and resource centralization
 
 ---
 
-## Enterprise Network IP Scheme
+## 4.Enterprise Network IP Scheme
 This project adopts a hierarchical and structured IP addressing scheme to ensure scalability, readability, and alignment with site-based segmentation in the SD-WAN fabric.
 
-### Data Center Addressing
+### 4.1 Data Center Addressing
 
 | Site | Location | Site ID | LAN Subnet | vEdge IPs |
 |------|----------|---------|------------|-----------|
@@ -47,7 +47,7 @@ This project adopts a hierarchical and structured IP addressing scheme to ensure
 
 *Subnets are aligned with the **Service VPN Number**.
 
-### Branch Addressing
+### 4.2 Branch Addressing
 
 | Site | Location | Site ID | LAN Subnet | vEdge IPs |
 |------|----------|---------|------------|-----------|
@@ -56,6 +56,13 @@ This project adopts a hierarchical and structured IP addressing scheme to ensure
 | BR3  | Berlin   | 103     | 10.X.103.0/24 | 10.0.103.1 |
 
 *Subnets are aligned with the **Service VPN Number**.
+
+---
+
+## 5.Per-Scenario Client Requirement Implementation
+### 5.1 Star_Topology_Setup
+![Lab Topology](./Topology/Star_Topology_Setup.png)
+
 
 ---
 
