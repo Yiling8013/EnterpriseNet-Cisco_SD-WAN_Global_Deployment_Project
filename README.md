@@ -60,11 +60,14 @@ This project adopts a hierarchical and structured IP addressing scheme to ensure
 ---
 
 ## 5.Per-Scenario Client Requirement Implementation
-### 5.1 Star_Topology_Setup
+### 5.1 Implement_Hub-and-spoke_Topology
+
 ![Lab Topology](./Topology/Star_Topology_Setup.png)
 
+This scenario requires a policy-driven hub-and-spoke SD-WAN architecture that connects branch sites (Paris and Berlin) to a centralized data center in London. Each site deploys vEdge routers that establish IPsec tunnels over multiple underlay transports, including MPLS, business Internet, and LTE, providing path diversity and high availability. Note that the IPsec tunnels shown in the diagram represent only a subset of the actual IPsec connections.
+
+This attached configuration constructs a hub-and-spoke topology from a control-plane perspective by restricting TLOC visibility at branch sites. Specifically, branch sites are allowed to learn only Data Center TLOCs while TLOCs from other branches are not advertised. As a result, branches can establish tunnels only toward the Data Center, preventing direct branch-to-branch connectivity and naturally forming a star topology. Note that detailed configuration refers to the file Star_Topology_Setup in project folder CLI_Configuration.
 
 ---
 
-## Device Configuration 
-Please refer to project folder.
+
